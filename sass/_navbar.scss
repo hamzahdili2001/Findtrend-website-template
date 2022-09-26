@@ -1,0 +1,42 @@
+.navbar {
+    min-height: rem(99);
+
+    &__mobile {
+
+        @media (max-width:900px) {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            transition: 300ms ease-in-out;
+        }
+
+        &--icons {
+            min-height: rem(99);
+        }
+
+        &.active {
+            top: 0;
+        }
+    }
+
+
+
+    &__links {
+
+        @media (max-width:900px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: rem(40);
+            margin-top: rem(40);
+        }
+    }
+}
+
+.closeBtn,
+.openBtn {
+    cursor: pointer;
+}
